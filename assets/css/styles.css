@@ -1,10 +1,11 @@
-/* Estilos globales */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -13,26 +14,28 @@ body {
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #007BFF, #00BFFF);
     color: #fff;
     text-align: center;
-    padding: 4em 0;
+    padding: 5em 0;
 }
 
-.hero .title {
+.hero h1 {
     font-size: 2.5rem;
-    margin: 0.5em 0;
 }
 
-.hero .subtitle {
+.hero-subtitle {
     font-size: 1.2rem;
-    margin: 0.5em 0 2em;
+    margin-bottom: 1.5em;
 }
 
 .cta-button {
-    display: inline-block;
     background: #fff;
     color: #007BFF;
     padding: 0.8em 1.5em;
@@ -48,36 +51,51 @@ body {
 
 /* About Section */
 .about {
-    background: #f9f9f9;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.about-image {
+    margin-top: 1.5em;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Skills Section */
+.skills {
+    background: #f4f4f4;
     padding: 2em 0;
     text-align: center;
 }
 
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1em;
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skill {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
 }
 
 /* Portfolio Section */
-.portfolio {
-    padding: 2em 0;
-    text-align: center;
-}
-
-.project-gallery {
+.portfolio-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
     justify-content: center;
 }
 
 .project-card {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     overflow: hidden;
-    width: 300px;
+    max-width: 300px;
     text-align: left;
 }
 
@@ -87,24 +105,17 @@ body {
 }
 
 .project-card h3 {
-    margin: 1em;
+    padding: 0.5em;
 }
 
 .project-card p {
-    margin: 0 1em 1em;
+    padding: 0.5em;
 }
 
 /* Contact Section */
 .contact {
-    background: #007BFF;
-    color: #fff;
     padding: 2em 0;
     text-align: center;
-}
-
-.contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1em;
 }
 
 /* Footer */

@@ -3,56 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Cabero07</title>
+    <title>Cabero07 - Portafolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h1 class="title">Hola, soy Cabero07</h1>
-            <p class="subtitle">Desarrollador web creativo. Aquí encontrarás mi portafolio y mis proyectos destacados.</p>
-            <a href="#portfolio" class="cta-button">Ver Proyectos</a>
+            <h1>¡Hola! Soy Cabero07</h1>
+            <p class="hero-subtitle">Desarrollador Web | Creativo | Innovador</p>
+            <a href="#portfolio" class="cta-button">Ver mis Proyectos</a>
         </div>
     </header>
-    <main>
-        <section id="about" class="about">
-            <div class="container">
-                <h2>Sobre mí</h2>
-                <p>Soy un desarrollador web apasionado por crear experiencias digitales únicas y atractivas. Con experiencia en diseño y desarrollo, me encanta dar vida a ideas innovadoras.</p>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy un desarrollador web apasionado por construir experiencias digitales modernas y funcionales. Con habilidades en diseño, desarrollo y creatividad, me esfuerzo por ofrecer soluciones únicas que impacten a los usuarios.</p>
+            <img src="assets/images/about-me.jpg" alt="Sobre mí" class="about-image">
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-list">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Git & GitHub</div>
+                <div class="skill">Diseño UI/UX</div>
             </div>
-        </section>
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2>Proyectos Destacados</h2>
-                <div class="project-gallery">
-                    <div class="project-card">
-                        <img src="assets/images/project1.jpg" alt="Proyecto 1">
-                        <h3>Proyecto 1</h3>
-                        <p>Descripción breve del proyecto.</p>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/project2.jpg" alt="Proyecto 2">
-                        <h3>Proyecto 2</h3>
-                        <p>Descripción breve del proyecto.</p>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/images/project3.jpg" alt="Proyecto 3">
-                        <h3>Proyecto 3</h3>
-                        <p>Descripción breve del proyecto.</p>
-                    </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <div class="portfolio-gallery">
+                <div class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto. <a href="#">Ver más</a></p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto. <a href="#">Ver más</a></p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project3.jpg" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto. <a href="#">Ver más</a></p>
                 </div>
             </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contáctame</h2>
-                <p>¿Interesado en trabajar conmigo? ¡Envíame un mensaje!</p>
-                <a href="mailto:caberowow@gmail.com" class="cta-button">Enviar Correo</a>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contáctame</h2>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <form action="#">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="cta-button">Enviar mensaje</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/cabero07" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/cabero07" target="_blank">LinkedIn</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 CaberoTech. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Cabero07. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
