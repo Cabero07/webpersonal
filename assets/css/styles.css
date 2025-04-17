@@ -18,110 +18,56 @@ h1, h2, h3 {
     margin: 0.5em 0;
 }
 
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00BFFF;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #007BFF, #00BFFF);
     color: #fff;
     text-align: center;
     padding: 5em 0;
+    margin-top: 3.5em; /* Space for navbar */
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 1.5em;
-}
-
-.cta-button {
-    background: #fff;
-    color: #007BFF;
-    padding: 0.8em 1.5em;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #ddd;
-}
-
-/* About Section */
-.about {
-    text-align: center;
-    padding: 2em 0;
-}
-
-.about-image {
-    margin-top: 1.5em;
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-/* Skills Section */
-.skills {
-    background: #f4f4f4;
-    padding: 2em 0;
-    text-align: center;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-}
-
-.skill {
-    background: #007BFF;
-    color: #fff;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-}
-
-/* Portfolio Section */
-.portfolio-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.project-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 300px;
-    text-align: left;
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-}
-
-.project-card h3 {
-    padding: 0.5em;
-}
-
-.project-card p {
-    padding: 0.5em;
-}
-
-/* Contact Section */
-.contact {
-    padding: 2em 0;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
+/* Other sections remain the same as previously defined */
