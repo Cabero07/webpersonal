@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabero07 - Portafolio</title>
+    <title>Cabero07 - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark text-light">
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="index.html" class="nav-logo">Cabero07</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre mí</a></li>
-                <li><a href="portfolio.html">Proyectos</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+            <a class="navbar-brand" href="index.html">Cabero07</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="bg-primary text-center text-light py-5">
         <div class="container">
-            <h1>¡Hola! Soy Cabero07</h1>
-            <p>Desarrollador Web | Creativo | Innovador</p>
-            <a href="portfolio.html" class="cta-button">Ver mis Proyectos</a>
+            <h1 class="display-4">¡Hola! Soy Cabero07</h1>
+            <p class="lead">Desarrollador Web | Creativo | Innovador</p>
+            <a href="portfolio.html" class="btn btn-outline-light btn-lg">Explorar Proyectos</a>
         </div>
     </header>
 
-    <footer>
+    <footer class="bg-dark text-center text-light py-3 mt-4">
         <p>&copy; 2025 Cabero07. Todos los derechos reservados.</p>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
