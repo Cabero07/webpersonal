@@ -4,37 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio - Cabero07</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
-        }
-        main {
-            padding: 2em;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Portafolio</h1>
+    <header class="hero">
+        <div class="container">
+            <h1 class="title">Hola, soy Cabero07</h1>
+            <p class="subtitle">Desarrollador web creativo. Aquí encontrarás mi portafolio y mis proyectos destacados.</p>
+            <a href="#portfolio" class="cta-button">Ver Proyectos</a>
+        </div>
     </header>
     <main>
-        <p>Hola, soy Cabero07. Aquí podrás encontrar información sobre mí y mi trabajo.</p>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Sobre mí</h2>
+                <p>Soy un desarrollador web apasionado por crear experiencias digitales únicas y atractivas. Con experiencia en diseño y desarrollo, me encanta dar vida a ideas innovadoras.</p>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Proyectos Destacados</h2>
+                <div class="project-gallery">
+                    <div class="project-card">
+                        <img src="assets/images/project1.jpg" alt="Proyecto 1">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción breve del proyecto.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/project2.jpg" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/project3.jpg" alt="Proyecto 3">
+                        <h3>Proyecto 3</h3>
+                        <p>Descripción breve del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contáctame</h2>
+                <p>¿Interesado en trabajar conmigo? ¡Envíame un mensaje!</p>
+                <a href="mailto:cabero07@example.com" class="cta-button">Enviar Correo</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Cabero07. Todos los derechos reservados.</p>
