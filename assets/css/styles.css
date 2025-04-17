@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-/* Navbar */
+/* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -27,6 +28,7 @@ body {
     align-items: center;
     padding: 0.7em 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .nav-logo {
@@ -57,22 +59,190 @@ body {
     color: #00BFFF;
 }
 
-/* Page-specific sections */
-.about, .portfolio, .contact {
-    padding: 5em 0;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: #fff;
     text-align: center;
+    padding: 5em 0;
+    margin-top: 3.5em; /* Space for navbar */
+    animation: fadeInUp 1.2s ease;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
 }
 
 .cta-button {
-    background: #007BFF;
-    color: #fff;
+    background: #fff;
+    color: #007BFF;
     padding: 0.8em 1.5em;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
+    background: #ddd;
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 5em 0;
+    background: #f4f4f4;
+    animation: fadeIn 1s ease;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 5em 0;
+    background: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.portfolio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.2s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h3 {
+    padding: 0.5em;
+}
+
+.project-card p {
+    padding: 0.5em;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact {
+    padding: 5em 0;
+    text-align: center;
+    background: #f4f4f4;
+    animation: fadeIn 1s ease;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact button {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
     background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    animation: fadeIn 1s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
